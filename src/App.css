@@ -1,0 +1,218 @@
+* {
+  font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #125B50;
+}
+.description{
+  font-weight: 600;
+  font-size: 23px;
+  color: black;
+
+}
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-weather {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: rgba(221, 221, 221, 0.759);
+  width: 28rem;
+  height: 35rem;
+  border: 1px solid #bba585;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+
+}
+
+.name-app {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.city {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #121212 ;
+
+
+}
+
+.icon-weather {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.336);
+  width: 100%;
+  height: 50%;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+
+
+}
+
+.icon-weather > img{
+ 
+image-rendering:optimizeQuality;
+}
+
+.temperature {
+  grid-column: 2;
+  display: flex;
+  width: 85%;
+  margin-left: 1rem;
+  height: 7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 600;
+  color:red;
+  text-align: center;
+  background-color: white;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+
+
+}
+
+button {
+ 
+  background-color: #125B50;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(55, 55, 55, 0.379);
+
+}
+
+.data-weather {
+  grid-column: 1 / span 2;
+  width: 100%;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -3rem;
+
+}
+.data-weather > ul > li{
+  list-style: none;
+  font-size: 22px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 0.3rem;
+  background-color: #125B50 ;
+  color: white;
+  font-weight: 600;
+
+}
+.results{
+  color: #FFEF82;
+}
+.update{
+  position: absolute;
+  bottom: 15%;
+  font-size: 38px;
+  font-weight: 600;
+  color:black;
+    font: normal 140px Varela Round, sans-serif;
+    height: 140px;
+    left: 0;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    animation: move linear 2000ms infinite;
+    z-index: 2
+
+}
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -4px -4px 0 #13f1fc,
+      -3px -3px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc,
+      4px 4px 0 #da0641,
+      3px 3px 0 #da0641,
+      2px 2px 0 #da0641,
+      1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #da0641,
+      -3px 3px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      4px -4px 0 #13f1fc,
+      3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+}
